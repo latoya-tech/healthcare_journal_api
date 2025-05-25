@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      get "journal_entries/index"
-      get "journal_entries/show"
-      get "journal_entries/create"
-      get "journal_entries/update"
-      get "journal_entries/destroy"
+      resources :journal_entries
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
